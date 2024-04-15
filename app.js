@@ -22,9 +22,7 @@ class LoginForm extends React.Component {
 
     // Perform login validation here
     // Replace the if condition with your own validation logic
-    temp_dict = {'admin1@gmail.com': 'admin2024', 'admin2@gmail.com': 'admin2025'}
-    console.log(temp_dict[this.state.email])
-    if (this.state.password == temp_dict[this.state.email]) {
+    if (this.state.email === 'admin@gmail.com' && this.state.password === 'admin2024') {
       window.location.href = 'ammazanbd-pro.html';
     } else {
       alert('Invalid email or password');
